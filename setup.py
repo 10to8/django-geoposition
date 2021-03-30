@@ -25,5 +25,8 @@ setup(
       'Operating System :: OS Independent',
       'Programming Language :: Python',
       'Framework :: Django',
-    ]
+    ],
+    install_requires=[
+        'six',
+    ],
 )
