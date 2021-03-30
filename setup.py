@@ -26,6 +26,9 @@ setup(
       'Programming Language :: Python',
       'Framework :: Django',
     ],
+    requires=[
+        'six'
+    ],
     install_requires=[
         'six',
     ],
