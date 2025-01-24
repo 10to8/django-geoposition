@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 from django import forms
 from django.template.loader import render_to_string
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 class GeopositionWidget(forms.MultiWidget):
     def __init__(self, attrs=None):
