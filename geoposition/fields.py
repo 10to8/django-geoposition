@@ -3,7 +3,7 @@ from django.db import models
 
 from . import Geoposition
 from .forms import GeopositionField as GeopositionFormField
-from django.utils.encoding import smart_text
+from django.utils.encoding import smart_str
 import decimal
 import six
 
