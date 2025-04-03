@@ -5,7 +5,6 @@ from . import Geoposition
 from .forms import GeopositionField as GeopositionFormField
 from django.utils.encoding import smart_str
 import decimal
-import six
 
 
 class GeopositionField(models.Field):
@@ -45,7 +44,7 @@ class GeopositionField(models.Field):
         return self.to_python(value)
     
     def get_prep_value(self, value):
-        return six.text_type(value)
+        return str(value)
     
     def value_to_string(self, obj):
         value = self._get_val_from_obj(obj)

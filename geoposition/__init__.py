@@ -1,9 +1,7 @@
-from __future__ import absolute_import
 from decimal import Decimal
-from six.moves import map
-import six
 
-VERSION = (0, 1, 4)
+
+VERSION = (0, 1, 6)
 __version__ = '.'.join(map(str, VERSION))
 
 
@@ -56,7 +54,7 @@ class Geoposition(object):
         return "Geoposition(%s)" % self.__unicode__()
     
     def __len__(self):
-        return len(six.text_type(self))
+        return len(str(self))
 
     def __iter__(self):
         yield self._latitude
